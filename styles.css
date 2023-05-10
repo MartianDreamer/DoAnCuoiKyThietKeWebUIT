@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 html {
     box-sizing: border-box;
 }
@@ -55,26 +57,24 @@ html {
     color: #0099ff;
 }
 
-.socialmedia {
-    margin-left: 50px;
-    size: 4;
+.socialmedia span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.fa {
-    color: #0099ff;
-    height: 30px;
-    width: 30px;
-    font-size: 30px;
+.socialmedia a {
+    display: grid;
+    list-style: none;
+    padding: 10px;
+    position: relative;
 }
 
-.fa-youtube,
-.fa-envelope {
-    color: red;
-    height: 30px;
-    width: 30px;
-    font-size: 30px;
-    margin-left: 15px;
+.socialmedia i {
+    padding: 0;
+    font-size: 24px;
 }
+
 
 /* form */
 
@@ -281,7 +281,7 @@ a:hover {
 .section-p1 {
     padding: 40px 80px;
     box-sizing: border-box;
-    font-family: "Spartan", sans-serif;
+    font-family: sans-serif;
 }
 
 .section-p1 h1 {
