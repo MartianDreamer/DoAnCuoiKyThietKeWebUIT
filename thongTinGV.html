@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>USUK English Cetner</title>
+    <title>USUK-Đội Ngũ Giáo Viên</title>
 
     <link
       rel="stylesheet"
@@ -23,11 +23,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
       html {
         box-sizing: border-box;
       }
+      /* navigation */
       .nav {
         margin-bottom: 50px;
         font-size: large;
@@ -88,7 +90,7 @@
         height: 30px;
         width: 30px;
         font-size: 30px;
-        margin-left: 15px;
+        /* margin-left: 15px; */
       }
 
       /* danh muc  */
@@ -105,13 +107,48 @@
       }
 
       /* footer */
+   
       .footer {
         background-color: beige;
-        height: 100px;
-        width: auto;
-        padding-top: 20px;
+        height: auto;
+        width: 100%;    
         margin-top: 50px;
+      
+        
+       
       }
+
+      .footer_grid {
+        display: grid;     
+        grid-template-columns: auto auto auto;
+        padding-top: 50px;
+        color: #0099ff;
+        font-size: 20px;
+        text-align: left;
+
+      }
+      .footer img {
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        margin-right: 0px;
+        margin-left: 20px;
+
+      }
+
+      .footer_grid-item3{
+        padding-top: 0px;
+        margin: 0px;
+        padding-left: 5px;
+        text-align: left;
+      }
+
+      /* copyright */
+      .copyright{
+        background-color:#ffe599;
+        padding-left: 20px;
+      }
+    
 
 
     </style>
@@ -161,15 +198,16 @@
                     Các Khóa Học
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Tiếng Anh Thiếu Nhi</a>
-                    <a class="dropdown-item" href="#">Tiếng Anh Thiếu Niên</a>
+                    <a class="dropdown-item" target="_blank"
+                    href="http://127.0.0.1:5500/DoAnCuoiKyThietKeWebUIT/thieuNhi.html">Tiếng Anh Thiếu Nhi</a>
+                    <a class="dropdown-item" target="_blank" href="http://127.0.0.1:5500/DoAnCuoiKyThietKeWebUIT/thieuNhi.html">Tiếng Anh Thiếu Niên</a>
                     <a class="dropdown-item" href="#">Tiếng Anh Giao Tiếp</a>
                     <a class="dropdown-item" href="#">Luyện Cấp Tốc IELTS</a>
                     <a class="dropdown-item" href="#">Tiếng Anh Phổ Thông</a>
                     <div class="dropdown-divider"></div>
                     <a
                       class="dropdown-item" target="_blank"
-                      href="http://127.0.0.1:5500/lienHe.html"
+                      href="http://127.0.0.1:5500/DoAnCuoiKyThietKeWebUIT/khoaHocSapKhaiGiang.html"
                       >KHÓA SẮP KHAI GIẢNG</a
                     >
                   </div>
@@ -301,7 +339,7 @@
             <br />
             <img
               alt="teacher"
-              src="./images/teacher.jpeg"
+              src="./images/certificate.jpg"
               height="auto"
               width="100%"
               style="position: relative"
@@ -349,61 +387,43 @@
 
     <!-- footer -->
 
+    <!-- footer -->
+
     <footer class="footer">
-      <!-- Copyright -->
-      <!-- <div class="footer-copyright text-center py-3">
-      <a href="#" style="color: yellow;"> USUK ENGLISH CENTER</a>
-      <h6>19 Hai Bà Trưng, Long Thành, Đồng Nai</h6>
-    </div> -->
-      <div>
-        <div class="container">
-          <div class="row">
-            <div class="col-9">
-              <div class="container">
-                <div class="row">
-                  <div class="col-3">
-                    <img
-                      src="./images/logousk.png"
-                      style="height: 80px; width: auto"
-                    />
-                  </div>
-                  <!-- <div class="col-9">
-                    <ul style="list-style:none;">
-                      <li>Phone: 090 222 7765</li>
-                      <li>Email:usukenglishcenter@gmail.com</li>
-                      <li>Address: 19 Hai Ba Trung, Long Thanh, Dong Nai</li>
-                      <li></li>
-                      <li></li>
-                    </ul>  
-                  </div> -->
-                </div>
-              </div>
-              <div class="col-3">
-                <!-- <div class="socialmediafooter">
-                  <span >
-                    <a
-                      target="_blank"
-                      href="https://www.facebook.com/usukcenterlongthanh"
-                      class="fa fa-facebook"
-                    ></a>
-                    <a
-                      target="_blank"
-                      href="https://youtube.com/shorts/Bjj3RxyRH24?feature=share"
-                      class="fa fa-youtube"
-                    ></a>
-                    <a
-                      href="mailto:usukenglishcenter@gmail.com"
-                      class="fa fa-envelope"
-                    ></a>
-                  </span>
-                </div> -->
-              </div>
-            </div>
-          </div>
+      <div class="footer_grid">
+        <div class="footer_grid-item1">
+            <img src="./images/logousk.png" alt="logo">
+           
         </div>
+        <div class="footer_grid-item2">
+            <p><a href="http://127.0.0.1:5500/DoAnCuoiKyThietKeWebUIT/thieuNhi.html">Khóa Học Tiếng Anh Thiếu Nhi</a></p>
+            <p>Khoá Học Tiếng Anh Thiếu Niên</p>
+            <p>Khóa Học Tiếng Anh Giao Tiếp Cấp Tốc</p>
+            <p>Khóa Học Luyện IELTS Cấp Tốc</p>
+            <p>Khóa Học Tiếng Anh Ngữ Pháp Phổ Thông</p>
+            <hr>
+            <p style="color: red;">KHÓA HỌC SẮP KHAI GIẢNG</p>
+        </div>
+        <div class="footer_grid-item3">
+            <div id="map" style="padding-right: 150px; padding-bottom: 10px;">
+                <iframe  "um-" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.393789991434!2d106.95354599999999!3d10.7811215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31751f2ead438e0d%3A0x57b81476e3049d36!2zMTkgSGFpIELDoCBUcsawbmcsIFRULiBMb25nIFRow6BuaCwgTG9uZyBUaMOgbmgsIMSQ4buTbmcgTmFp!5e0!3m2!1sen!2s!4v1665562064018!5m2!1sen!2s" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p><i class="fas fa-map-marker-alt" style="font-size: 30px;"></i>
+                Địa chỉ: 19 Hai Bà Trưng, Long Thành, Đồng Nai</p>
+            <p><i class="fa fa-phone" style="font-size: 30px;"></i>
+                Điện thoại: (+84) 090 222 7765 </p>
+            <p><i class="fa fa-envelope" style="font-size: 30px; color:#0099ff;"></i>
+                Email: usukcenterlongthanh@gmail.com</p>
+            
+        </div>
+       
       </div>
-      <!-- Copyright -->
+      <!-- Copyright --> 
+      <div class="copyright">
+        <p style="margin-bottom: 0px; color: gray;">Copyright @2023 by USUK International English Academic</p>
+      </div>
     </footer>
+
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
