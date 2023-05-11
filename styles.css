@@ -61,23 +61,7 @@ html {
   color: #0099ff;
 }
 
-.socialmedia span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.socialmedia a {
-  display: grid;
-  list-style: none;
-  padding: 10px;
-  position: relative;
-}
-
-.socialmedia i {
-  padding: 0;
-  font-size: 24px;
-}
 
 /* form */
 
@@ -251,6 +235,23 @@ padding-top: 10px;
   margin-left: 50px;
   size: 4;
 }
+.socialmedia span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialmedia a {
+  display: grid;
+  list-style: none;
+  padding: 10px;
+  position: relative;
+}
+
+.socialmedia i {
+  padding: 0;
+  font-size: 24px;
+}
 
 .fa {
   color: #0099ff;
@@ -402,10 +403,10 @@ a:hover {
 
 #hero {
   background-image: url("img/hero4.jpg");
-  height: 90vh;
+  height: 100%;
   width: 100%;
-  background-size: cover;
-  background-position: top 25% right 0%;
+  background-size:cover;
+  background-position: top 25% right 10%;
   padding: 0 80px;
   display: flex;
   flex-direction: column;
@@ -441,6 +442,7 @@ a:hover {
   flex-wrap: wrap;
   margin-right: 0px;
   margin-left: 0px;
+  padding: 0 250px;
 }
 
 #feature .fe-box {
@@ -494,7 +496,7 @@ a:hover {
 /* footer */
 .footer {
   background-color: beige;
-  height: auto;
+  height:fit-content;
   width: 100%;
   margin-top: 10px;
 }
@@ -504,8 +506,10 @@ a:hover {
   grid-template-columns: auto auto auto;
   padding-top: 50px;
   color: #0099ff;
-  font-size: 20px;
   text-align: left;
+}
+.footer_grid p,a {
+  font-size: 15px;
 }
 
 .footer img {
@@ -520,6 +524,15 @@ a:hover {
   margin: 0px;
   padding-left: 5px;
   text-align: left;
+}
+.footer_grid-item1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_grid-item1 img{
+  max-width: 75%;
+  max-height: 75%;
 }
 
 /* copyright */
