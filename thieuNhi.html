@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USUK-Tiếng Anh Thiếu Nhi</title>
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" /> -->
+
+
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      .nav {
+        margin-bottom: 50px;
+        font-size: large;
+        padding-left: 25px;
+        padding-right: 15px;
+      }
+      .giaoVien {
+        border-style: dashed;
+        /* background-color:#cc99ff; */
+        border-radius: 15px;
+      }
+      .chungchi {
+        margin-top: 20px;
+      }
+
+      .navbar navbar-light {
+        margin-right: 0%;
+        margin-left: 0%;
+      }
+      .navbar {
+        padding: 0em 0em;
+        margin: 0.2em 0.5em;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      .bg-light {
+        background-color: white !important;
+      }
+
+      .dropdown-menu:hover {
+        color: red;
+      }
+
+      .navbar-light .navbar-nav .nav-link {
+        color: #0099ff;
+      }
+
+      .navbar-light .navbar-nav .nav-link.disabled {
+        color: #0099ff;
+      }
+
+      .socialmedia {
+        margin-left: 50px;
+        size: 4;
+        position: relative;
+        left: 25%;
+      }
+
+      .fa {
+        color: #0099ff;
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+      }
+
+      .fa-youtube,
+      .fa-envelope {
+        color: red;
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+        /* margin-left: 10px; */
+      }
+
+      /* danh muc  */
+      .list-group-item.active {
+        z-index: 2;
+        color: #fff;
+        background-color: beige;
+        border-color: beige;
+      }
+
+      a:hover {
+        color: red;
+        text-decoration: none;
+      }
+      /* chuong trinh thieu nhi */
+      .cttn {
+        background-color: white;
+        color: red;
+        text-align: center;
+        margin: 10px 90px;
+        border-radius: 30px;
+        padding: 10px;
+        border-style: dashed;
+      }
+      .cttn_nd {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        /* grid-template-rows: repeat(2, 50px); */
+        gap: 100px;
+        border-radius: 20px;
+        margin: 50px;
+      }
+
+      /* .cttn_nd1 {
+        background-color: #0099ff;
+      } */
+
+      .cttn_nd1 h5 {
+        text-align: left;
+        color: #0099ff;
+        font-size: 35px;
+        /* margin-top: 30px; */
+        background: beige;
+        border-radius: 20px;
+        padding: 5px 10px;
+      }
+
+      .cttn_nd2 h5 {
+        color: red;
+        font-size: 35px;
+        /* margin-top: 30px; */
+        background: beige;
+        border-radius: 20px;
+        padding: 15px;
+        text-align: left;
+      }
+      .cttn_nd1 p {
+        padding: 10px;
+        font-size: 25px;
+        color: aliceblue;
+        background-color: #0099ff;
+        margin: 0px;
+      }
+
+      .cttn_nd2 {
+        margin-right: 100px;
+      }
+
+      /* footer */
+      .footer {
+        background-color: beige;
+        height: auto;
+        width: 100%;    
+      }
+
+      .footer_grid {
+        display: grid;     
+        grid-template-columns: auto auto auto;
+        padding-top: 50px;
+        color: #0099ff;
+        font-size: 20px;
+        text-align: left;
+      }
+
+      .footer img {
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        margin-right: 0px;
+      }
+
+      .footer_grid-item3{
+        padding-top: 0px;
+        margin: 0px;
+        padding-left: 5px;
+        text-align: left;
+      }
+
+         /* copyright */
+         .copyright{
+        background-color:#ffe599;
+        padding-left: 20px;
+      }
+
+     .form-search {
+      position: relative;
+      left: 20%;
+     }
+
+     .list-menu {
+      position: relative;
+      left: 10%;
+     }
+    
+    </style>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <div class="nav">
+      <!-- <div class="col-sm-3"></div> -->
+      <div style="width: 100%;">
+        <!-- Nav tabs -->
+        <!-- <ul class="nav nav-tabs"> -->
+        <nav class="navbar navbar-light" style="border: beige solid 8px;">
+          <!-- Navbar content -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- <a class="navbar-brand" href="#">USUK English Center</a> -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse header" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto list-menu">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"
+                    >Trang Chủ<span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    target="_blank"
+                    href="http://127.0.0.1:5500/DoAnCuoiKyThietKeWebUIT/thongTinGV.html#"
+                    >Đội Ngũ Giáo Viên</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Các Khóa Học
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a
+                      class="dropdown-item"
+                      target="_blank"
+                      href="http://127.0.0.1:5500/DoAnCuoiKyThietKeWebUIT/thieuNhi.html"
+                      >Tiếng Anh Thiếu Nhi</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      target="_blank"
+                      href="http://127.0.0.1:5500/DoAnCuoiKyThietKeWebUIT/thieuNhi.html"
+                      >Tiếng Anh Thiếu Niên</a
+                    >
+                    <a class="dropdown-item" href="#">Tiếng Anh Giao Tiếp</a>
+                    <a class="dropdown-item" href="#">Luyện Cấp Tốc IELTS</a>
+                    <a class="dropdown-item" href="#">Tiếng Anh Phổ Thông</a>
+                    <div class="dropdown-divider"></div>
+                    <a
+                      class="dropdown-item"
+                      target="_blank"
+                      href="http://127.0.0.1:5500/DoAnCuoiKyThietKeWebUIT/khoaHocSapKhaiGiang.html"
+                      >KHÓA SẮP KHAI GIẢNG</a
+                    >
+                  </div>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Thành Tích HV Đạt Được</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Lớp Học Thực Tế</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:5500/lienHe.html"
+                    >Check Grammar Free</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    target="_blank"
+                    href="http://127.0.0.1:5500/lienHe.html"
+                    >Liên hệ</a
+                  >
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0 form-search" style="margin-left: 50px">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-success my-2 my-sm-0"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+
+              <div class="socialmedia">
+        
+                  <!-- <a
+                    target="_blank" 
+                    href="https://www.facebook.com/usukcenterlongthanh"
+                    class="fa fa-facebook" 
+                  ></a> -->
+                  <a
+                    target="_blank" 
+                    href="https://www.facebook.com/usukcenterlongthanh"
+                  ><i class="fa-brands fa-facebook"></i></a>
+                  <a
+                    target="_blank"
+                    href="https://youtube.com/shorts/Bjj3RxyRH24?feature=share"
+                
+                  ><i class="fa-brands fa-youtube"></i></a>
+                  <a
+                    href="mailto:usukenglishcenter@gmail.com"
+                    class="fa fa-envelope"
+                  ></a>
+              
+              </div>
+            </div>
+          </nav>
+        </nav>
+      </div>
+      <!-- <div class="col-sm-3"></div> -->
+    </div>
+    <!-- TIENG ANH THIEU NHI -->
+    <div>
+      <h1 class="cttn">Tiếng Anh Thiếu Nhi</h1>
+    </div>
+    <div class="cttn_nd">
+      <div class="cttn_nd1">
+        <h5>Tâm Lý Trẻ</h5>
+        <hr style="background-color: gainsboro; height: 2px" />
+
+        <p>
+          <i class="fa-solid fa-thumbtack fa-xs"></i>
+          Con bắt đầu sử dụng tư duy logic, hiểu vấn đề theo khía cạnh đa chiều
+        </p>
+        <p>
+          <i class="fa-solid fa-thumbtack fa-xs"></i> Con vẫn thích các hoạt động sôi
+          nổi, cạnh tranh
+        </p>
+        <p>
+          <i class="fa-solid fa-thumbtack fa-xs" "></i> Con hình thành cả 04 kỹ năng
+          ngôn ngữ: Nghe, Nói, Đọc, Viết
+        </p>
+        <br />
+        <br />
+        <h5>Cam Kết Đào Tạo</h5>
+        <hr style="background-color: gainsboro; height: 2px" />
+        <p>
+            <i class="fa-solid fa-check"></i></i>
+           Con tự tin giao tiếp trôi chảy bằng Tiếng Anh. Con chủ động nhận biết
+          và hoàn thiện các lỗi ngôn ngữ đọc, viết
+        </p>
+        <p><i class="fa-solid fa-check"></i>
+           Con thể hiện khả năng lãnh đạo, biết cách trình bày thuyết phục và tạo
+          ảnh hưởng
+        </p>
+        <p><i class="fa-solid fa-check"></i>
+           Con làm chủ kỹ năng viết, nói Tiếng Anh và hình thành thói quen học
+          tập độc lập. Con sẵn sàng chinh phục các kỳ thi quốc tế phù hợp với độ
+          tuổi
+        </p>
+      </div>
+      <div class="cttn_nd2">
+        <h5>Video Lớp Học Thực Tế</h5>
+        <br />
+        <iframe
+          style="align-items: center"
+          width="100%"
+          height="500"
+          src="https://www.youtube.com/embed/3rgY867P7EY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <!-- DANH MUC -->
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer_grid">
+        <div class="footer_grid-item1">
+            <img src="./images/logousk.png" alt="logo">
+           
+        </div>
+        <div class="footer_grid-item2">
+            <p><a href="http://127.0.0.1:5500/DoAnCuoiKyThietKeWebUIT/thieuNhi.html">Khóa Học Tiếng Anh Thiếu Nhi</a></p>
+            <p>Khoá Học Tiếng Anh Thiếu Niên</p>
+            <p>Khóa Học Tiếng Anh Giao Tiếp Cấp Tốc</p>
+            <p>Khóa Học Luyện IELTS Cấp Tốc</p>
+            <p>Khóa Học Tiếng Anh Ngữ Pháp Phổ Thông</p>
+            <hr>
+            <p style="color: red;">KHÓA HỌC SẮP KHAI GIẢNG</p>
+        </div>
+        <div class="footer_grid-item3">
+            <div id="map" style="padding-right: 150px; padding-bottom: 10px;">
+                <iframe  "um-" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.393789991434!2d106.95354599999999!3d10.7811215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31751f2ead438e0d%3A0x57b81476e3049d36!2zMTkgSGFpIELDoCBUcsawbmcsIFRULiBMb25nIFRow6BuaCwgTG9uZyBUaMOgbmgsIMSQ4buTbmcgTmFp!5e0!3m2!1sen!2s!4v1665562064018!5m2!1sen!2s" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p><i class="fas fa-map-marker-alt" style="font-size: 30px;"></i>
+                Địa chỉ: 19 Hai Bà Trưng, Long Thành, Đồng Nai</p>
+            <p><i class="fa fa-phone" style="font-size: 30px;"></i>
+                Điện thoại: (+84) 090 222 7765 </p>
+            <p><i class="fa fa-envelope" style="font-size: 30px; color:#0099ff;"></i>
+                Email: usukcenterlongthanh@gmail.com</p>
+            
+        </div>
+       
+      </div>
+      <!-- Copyright --> 
+         <!-- Copyright --> 
+         <div class="copyright">
+            <p style="margin-bottom: 0px; color: gray;">Copyright @2023 by USUK International English Academic</p>
+          </div>
+    </footer>
+    
+    
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
