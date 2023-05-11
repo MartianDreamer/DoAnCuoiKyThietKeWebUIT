@@ -191,8 +191,11 @@ html {
 }
 
 .nav {
+<<<<<<< HEAD
   position: sticky;
   top: 0px;
+=======
+>>>>>>> 0af9e6eda84fedc48200f75c3e92c8843b96b2d9
   margin-bottom: 50px;
   font-size: large;
   padding-left: 25px;
@@ -203,6 +206,7 @@ html {
   border-style: dashed;
   /* background-color:#cc99ff; */
   border-radius: 15px;
+<<<<<<< HEAD
 }
 .hinhGV{
 float: left;
@@ -210,11 +214,16 @@ width: 200px;
 height: 200px;
 padding-right: 15px;
 padding-top: 10px;
+=======
+>>>>>>> 0af9e6eda84fedc48200f75c3e92c8843b96b2d9
 }
 
 .chungchi {
   margin-top: 20px;
+<<<<<<< HEAD
  
+=======
+>>>>>>> 0af9e6eda84fedc48200f75c3e92c8843b96b2d9
 }
 
 .navbar navbar-light {
@@ -429,7 +438,11 @@ a:hover {
   cursor: pointer;
   font-weight: 700;
   font-size: 15px;
+<<<<<<< HEAD
   border-radius: 20px;
+=======
+  border-radius: 5px;
+>>>>>>> 0af9e6eda84fedc48200f75c3e92c8843b96b2d9
 }
 
 #feature {
@@ -488,6 +501,7 @@ a:hover {
 #feature .fe-box:nth-child(6) h6 {
   background-color: #fff2e5;
 }
+<<<<<<< HEAD
 
 /* footer */
 .footer {
@@ -535,3 +549,5 @@ a:hover {
   margin-top: 20px;
   margin-bottom: 30px;
 }
+=======
+>>>>>>> 0af9e6eda84fedc48200f75c3e92c8843b96b2d9
