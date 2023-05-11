@@ -195,8 +195,10 @@ html {
   top: 0px;
   margin-bottom: 50px;
   font-size: large;
+  z-index: 999;
   padding-left: 25px;
   padding-right: 15px;
+  background-color: white;
 }
 
 .giaoVien {
