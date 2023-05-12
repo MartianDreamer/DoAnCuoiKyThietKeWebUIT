@@ -113,5 +113,8 @@ const $body = document.querySelector("body");
 $body.insertAdjacentHTML("afterbegin", header);
 const url = window.location.href;
 const fileName = url.substring(url.lastIndexOf("/") + 1);
-const active = document.querySelector(`a[href="../${fileName}"]`);
+let active = document.querySelector(`a[href="../${fileName}"]`);
+if (active == null) {
+  active = document.querySelector(`a#navbarDropdown`);
+}
 active.className += " active";
