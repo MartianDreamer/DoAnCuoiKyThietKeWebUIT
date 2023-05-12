@@ -615,3 +615,58 @@ a:hover {
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
+
+      /* chuong trinh thieu nhi */
+      .cttn {
+        background-color: white;
+        color: red;
+        text-align: center;
+        margin: 10px 90px;
+        border-radius: 30px;
+        padding: 10px;
+        border-style: dashed;
+      }
+      .cttn_nd {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        /* grid-template-rows: repeat(2, 50px); */
+        gap: 100px;
+        border-radius: 20px;
+        margin: 50px;
+      }
+
+      /* .cttn_nd1 {
+        background-color: #0099ff;
+      } */
+
+      .cttn_nd1 h5 {
+        text-align: left;
+        color: #0099ff;
+        font-size: 35px;
+        /* margin-top: 30px; */
+        background: beige;
+        border-radius: 20px;
+        padding: 5px 10px;
+      }
+
+      .cttn_nd2 h5 {
+        color: red;
+        font-size: 35px;
+        /* margin-top: 30px; */
+        background: beige;
+        border-radius: 20px;
+        padding: 15px;
+        text-align: left;
+      }
+      .cttn_nd1 p {
+        padding: 10px;
+        font-size: 25px;
+        color: aliceblue;
+        background-color: #0099ff;
+        margin: 0px;
+      }
+
+      .cttn_nd2 {
+        margin-right: 100px;
+      }
