@@ -143,6 +143,7 @@ input[type="submit"]:hover {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+
   .column,
   input[type="submit"] {
     width: 100%;
@@ -190,17 +191,18 @@ html {
   /* background-color:#cc99ff; */
   border-radius: 15px;
 }
-.hinhGV{
-float: left;
-width: 200px;
-height: 200px;
-padding-right: 15px;
-padding-top: 10px;
+
+.hinhGV {
+  float: left;
+  width: 200px;
+  height: 200px;
+  padding-right: 15px;
+  padding-top: 10px;
 }
 
 .chungchi {
   margin-top: 20px;
- 
+
 }
 
 .navbar navbar-light {
@@ -235,6 +237,7 @@ padding-top: 10px;
   margin-left: 50px;
   size: 4;
 }
+
 .socialmedia span {
   display: flex;
   align-items: center;
@@ -405,7 +408,7 @@ a:hover {
   background-image: url("img/hero4.jpg");
   height: 100%;
   width: 100%;
-  background-size:cover;
+  background-size: cover;
   background-position: top 25% right 10%;
   padding: 0 80px;
   display: flex;
@@ -493,10 +496,11 @@ a:hover {
   background-color: #fff2e5;
 }
 
-#pagination{
+#pagination {
   text-align: center;
 }
-#pagination a{
+
+#pagination a {
   text-decoration: none;
   background-color: #088178;
   padding: 15px 20px;
@@ -504,66 +508,79 @@ a:hover {
   color: #fff;
   font-weight: 600;
 }
-#pagination a i{
+
+#pagination a i {
   font-size: 16px;
   font-weight: 600;
 }
-#prodetails .single-pro-image{
+
+#prodetails .single-pro-image {
   width: 40%;
   margin-right: 50px;
 }
-.small-img-group{
+
+.small-img-group {
   display: flex;
   justify-content: space-between;
 }
-.small-img-col{
+
+.small-img-col {
   flex-basis: 24%;
   cursor: pointer;
 }
-#prodetails{
+
+#prodetails {
   display: flex;
   margin-top: 20px;
   justify-content: center;
   align-content: center;
 }
-#prodetails .single-pro-detail{
+
+#prodetails .single-pro-detail {
   width: 50%;
   padding-top: 30px;
 }
-#prodetails .single-pro-detail h4{
+
+#prodetails .single-pro-detail h4 {
   padding: 40px 0 20px 0;
 }
-#prodetails .single-pro-detail h2{
+
+#prodetails .single-pro-detail h2 {
   font-size: 26px;
 }
-#prodetails .single-pro-detail select{
+
+#prodetails .single-pro-detail select {
   display: block;
   padding: 5px 10px;
   margin-bottom: 10px;
 }
-#prodetails .single-pro-detail input{
+
+#prodetails .single-pro-detail input {
   width: 50px;
   height: 47px;
   padding-left: 10px;
   font-size: 16px;
   margin-right: 10px;
 }
-#prodetails .single-pro-detail input:focus{
+
+#prodetails .single-pro-detail input:focus {
   outline: none;
 }
-#prodetails .single-pro-detail button{
+
+#prodetails .single-pro-detail button {
   background-color: #088178;
   color: #fff;
   cursor: pointer;
 }
-#prodetails .single-pro-detail span{
+
+#prodetails .single-pro-detail span {
   line-height: 25px;
 }
 
 /* footer */
 .footer {
   background-color: beige;
-  height:fit-content;
+  height: fit-content;
   width: 100%;
   margin-top: 10px;
 }
@@ -575,7 +592,9 @@ a:hover {
   color: #0099ff;
   text-align: left;
 }
-.footer_grid p,a {
+
+.footer_grid p,
+a {
   font-size: 15px;
 }
 
@@ -592,12 +611,14 @@ a:hover {
   padding-left: 5px;
   text-align: left;
 }
-.footer_grid-item1{
+
+.footer_grid-item1 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.footer_grid-item1 img{
+
+.footer_grid-item1 img {
   max-width: 75%;
   max-height: 75%;
 }
@@ -619,56 +640,126 @@ a:hover {
 }
 
 
-      /* chuong trinh thieu nhi */
-      .cttn {
-        background-color: white;
-        color: red;
-        text-align: center;
-        margin: 10px 90px;
-        border-radius: 30px;
-        padding: 10px;
-        border-style: dashed;
-      }
-      .cttn_nd {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        /* grid-template-rows: repeat(2, 50px); */
-        gap: 100px;
-        border-radius: 20px;
-        margin: 50px;
-      }
+/* chuong trinh thieu nhi */
+.cttn {
+  background-color: white;
+  color: red;
+  text-align: center;
+  margin: 10px 90px;
+  border-radius: 30px;
+  padding: 10px;
+  border-style: dashed;
+}
 
-      /* .cttn_nd1 {
+.cttn_nd {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* grid-template-rows: repeat(2, 50px); */
+  gap: 100px;
+  border-radius: 20px;
+  margin: 50px;
+}
+
+/* .cttn_nd1 {
         background-color: #0099ff;
       } */
 
-      .cttn_nd1 h5 {
-        text-align: left;
-        color: #0099ff;
-        font-size: 35px;
-        /* margin-top: 30px; */
-        background: beige;
-        border-radius: 20px;
-        padding: 5px 10px;
-      }
+.cttn_nd1 h5 {
+  text-align: left;
+  color: #0099ff;
+  font-size: 35px;
+  /* margin-top: 30px; */
+  background: beige;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
 
-      .cttn_nd2 h5 {
-        color: red;
-        font-size: 35px;
-        /* margin-top: 30px; */
-        background: beige;
-        border-radius: 20px;
-        padding: 15px;
-        text-align: left;
-      }
-      .cttn_nd1 p {
-        padding: 10px;
-        font-size: 25px;
-        color: aliceblue;
-        background-color: #0099ff;
-        margin: 0px;
-      }
+.cttn_nd2 h5 {
+  color: red;
+  font-size: 35px;
+  /* margin-top: 30px; */
+  background: beige;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: left;
+}
 
-      .cttn_nd2 {
-        margin-right: 100px;
-      }
+.cttn_nd1 p {
+  padding: 10px;
+  font-size: 25px;
+  color: aliceblue;
+  background-color: #0099ff;
+  margin: 0px;
+}
+
+.cttn_nd2 {
+  margin-right: 100px;
+}
+
+#login-sec form {
+  border: 3px solid #f1f1f1;
+}
+
+#login-sec input[type=text],
+#login-sec input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#login-sec button {
+  background-color: blueviolet;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#login-sec button:hover {
+  opacity: 0.8;
+}
+
+#login-sec .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+#login-sec .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+#login-sec img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+#login-sec .container {
+  padding: 16px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+
+}
+
+#login-sec span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
