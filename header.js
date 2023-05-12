@@ -42,7 +42,7 @@ const header = `    <div class="nav mb-4">
               <a class="nav-link" href="#">Thành Tích HV Đạt Được</a>
             </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Lớp Học Thực Tế</a>
+            <a class="nav-link" href="../lopHocThucTe.html">Lớp Học Thực Tế</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../shop.html">Mua Sách</a>

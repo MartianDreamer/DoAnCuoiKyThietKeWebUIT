@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>USUK-LopHocThucTe</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="../styles.css" />
+
+  <script>
+    window.alert("Vui lòng đăng nhập để thực hiện tính năng này");
+    function loaded() {
+      window.setTimeout(CloseMe, 3000);
+    }
+
+    function CloseMe() {
+      window.close();
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    form {
+      border: 3px solid #f1f1f1;
+    }
+
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: blueviolet;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+    }
+
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+
+    .container {
+      padding: 16px;
+      border-radius: 5px;
+      background-color: whitesmoke;
+
+    }
+
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+
+      .cancelbtn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body onload="loaded">
+
+  <h2 style="text-align: center;">Thông Tin Đăng Nhập</h2>
+  <form action="/action_page.php" method="post">
+
+    <div class="container">
+      <label for="uname"><b>Tên Đăng Nhập</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Mật Khẩu</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Đăng Nhập</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Ghi nhớ
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer_grid">
+      <div class="footer_grid-item1">
+        <img src="./images/logousk.png" alt="logo">
+
+      </div>
+      <div class="footer_grid-item2">
+        <p><a href="../cacKhoaHoc/thieuNhi.html">Khóa Học Tiếng Anh Thiếu Nhi</a></p>
+        <p>Khoá Học Tiếng Anh Thiếu Niên</p>
+        <p>Khóa Học Tiếng Anh Giao Tiếp Cấp Tốc</p>
+        <p>Khóa Học Luyện IELTS Cấp Tốc</p>
+        <p>Khóa Học Tiếng Anh Ngữ Pháp Phổ Thông</p>
+        <hr>
+        <a style="color: red;" href="../cacKhoaHoc/khoaHocSapKhaiGiang.html">KHÓA HỌC SẮP KHAI GIẢNG</a>
+      </div>
+      <div class="footer_grid-item3">
+        <div id="map" style="padding-right: 150px; padding-bottom: 10px;">
+          <iframe "um-"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.393789991434!2d106.95354599999999!3d10.7811215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31751f2ead438e0d%3A0x57b81476e3049d36!2zMTkgSGFpIELDoCBUcsawbmcsIFRULiBMb25nIFRow6BuaCwgTG9uZyBUaMOgbmgsIMSQ4buTbmcgTmFp!5e0!3m2!1sen!2s!4v1665562064018!5m2!1sen!2s"
+            width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p><i class="fas fa-map-marker-alt" style="font-size: 30px;"></i>
+          Địa chỉ: 19 Hai Bà Trưng, Long Thành, Đồng Nai</p>
+        <p style="margin-left: -7px;"><i class="fa fa-phone" style="font-size: 30px;"></i>
+          Điện thoại: (+84) 090 222 7765 </p>
+        <p style="margin-left: -19px;"><i class="fa fa-envelope" style="font-size: 30px; color:#0099ff;"></i>
+          Email: usukcenterlongthanh@gmail.com</p>
+
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <p style="margin-bottom: 0px; color: gray;">Copyright @2023 by USUK International English Academic</p>
+    </div>
+  </footer>
+
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    
+          <script src="../header.js"></script>
+
+
+</body>
+
+</html>
