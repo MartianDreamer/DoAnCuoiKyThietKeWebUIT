@@ -94,7 +94,7 @@ const header = `    <div class="nav mb-4">
             ></a>
             <a
               target="_blank"
-              href="https://youtube.com/shorts/Bjj3RxyRH24?feature=share"
+              href="https://www.youtube.com/@USUKEnglishCenterLongThanh"
               ><i class="fab fa-youtube-square"></i
             ></a>
             <a href="mailto:usukenglishcenter@gmail.com"
