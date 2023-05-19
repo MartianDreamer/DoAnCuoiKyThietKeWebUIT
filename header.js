@@ -74,14 +74,14 @@ const header = `    <div class="nav mb-4">
           <input
             class="form-control mr-sm-2"
             type="search"
-            placeholder="Search"
+            placeholder="Tìm kiếm"
             aria-label="Search"
           />
           <button
             class="btn btn-outline-success my-2 my-sm-0"
             type="submit"
           >
-            Search
+            <i class="far fa-search"></i>
           </button>
         </form>
 

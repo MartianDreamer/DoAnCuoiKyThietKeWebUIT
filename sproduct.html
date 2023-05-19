@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Liên Hệ</title>
+    <title>Practical English Usage, 4th edition</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
@@ -266,15 +266,31 @@
         var smallImg = document.getElementsByClassName("small-img")
 
         smallImg[0].onclick =  function(){
+            smallImg[0].style.border = '10px solid #ff7b00';
+            smallImg[1].style.border = 'none';
+            smallImg[2].style.border = 'none';
+            smallImg[3].style.border = 'none';
             MainImg.src = smallImg[0].src;
         }
         smallImg[1].onclick =  function(){
+            smallImg[1].style.border = '10px solid #ff7b00';
+            smallImg[0].style.border = 'none';
+            smallImg[2].style.border = 'none';
+            smallImg[3].style.border = 'none';
             MainImg.src = smallImg[1].src;
         }
         smallImg[2].onclick =  function(){
+            smallImg[2].style.border = '10px solid #ff7b00';
+            smallImg[0].style.border = 'none';
+            smallImg[1].style.border = 'none';
+            smallImg[3].style.border = 'none';
             MainImg.src = smallImg[2].src;
         }
         smallImg[3].onclick =  function(){
+            smallImg[3].style.border = '10px solid #ff7b00';
+            smallImg[0].style.border = 'none';
+            smallImg[2].style.border = 'none';
+            smallImg[1].style.border = 'none';
             MainImg.src = smallImg[3].src;
         }
     </script>
